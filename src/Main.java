@@ -7,8 +7,11 @@ public class Main {
         int putMoney = 2300;
 
         // логика
-        int bonus = putMoney / 100;
-        if (putMoney < 1000) {
+
+        int bonus;
+        if (putMoney >= 1000) {
+            bonus = putMoney / 100;
+        } else {
             bonus = 0;
         }
         int withoutBonus = wallet + putMoney;
